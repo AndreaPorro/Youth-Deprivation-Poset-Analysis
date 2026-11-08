@@ -5,6 +5,7 @@ This repository contains a group project developed for the **Data Science Lab** 
 The project asks which European countries are *unambiguously* leaving their young people behind. It applies **partial order set (poset) theory**, a non-compensatory alternative to composite indices, to **five youth-deprivation indicators** from OECD, Eurostat and PISA data across **24 European countries**, and compares the result with a conventional equal-weight composite index.
 
 📄 **Report:** [`DSLab_project-Left_Behind__Not_Averaged_Out.pdf`](./DSLab_project-Left_Behind__Not_Averaged_Out.pdf)
+
 💻 **Full pipeline (R Markdown):** [`Left_Behind__Not_Averaged_Out.Rmd`](./Left_Behind__Not_Averaged_Out.Rmd)
 
 ---
@@ -70,31 +71,6 @@ Composite indices average several indicators, so a good score on one dimension c
 * **Cross-validation:** a from-scratch R implementation checked against `parsec`, both validated first on a toy poset with hand-computable results.
 * **Composite-index benchmark:** equal-weight average of the five min–max normalised indicators, compared via Spearman correlation.
 * **Robustness checks:** indicator jackknife, country jackknife, alternative discretisation schemes, permutation test (1,000 replications) and a blocking-dimension analysis.
-
----
-
-## 📂 Repository Structure
-
-* `Left_Behind__Not_Averaged_Out.Rmd` — Complete, executable pipeline
-* `DSLab_project-Left_Behind__Not_Averaged_Out.pdf` — Final report
-
-Running the pipeline also generates a few CSV and JSON files in the working directory (`idea5_matrix_oriented_R.csv`, `idea5_grades_A_R.csv`, `idea5_grades_B_R.csv`, `idea5_jackknife_idn_R.csv`, `idea5_summary_R.json`). They are not stored in this repository.
-
----
-
-## ⚙️ How to Run
-
-1. Download or clone this repository.
-2. Install the required R packages:
-   ```r
-   install.packages(c("httr", "readr", "dplyr", "tidyr", "purrr",
-                      "corrplot", "pheatmap", "ggplot2",
-                      "parsec", "jsonlite", "eurostat", "rmarkdown"))
-   ```
-3. Knit the pipeline (an internet connection is required to download the data):
-   ```r
-   rmarkdown::render("Left_Behind__Not_Averaged_Out.Rmd")
-   ```
 
 ---
 
