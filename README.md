@@ -88,7 +88,7 @@ Composite indices average several indicators, so a good score on one dimension c
 
 - [@ilaria-cesa](https://github.com/ilaria-cesa)
 - [@mezza04](https://github.com/mezza04)
-- [@nicolonucci] (https://github.com/nicolonucci)
+- [@nicolonucci](https://github.com/nicolonucci)
 
 ---
 *Developed by Andrea Porro, Ilaria Anna Cesaratto, Chiara Mezzanzanica and Nicolo Nucci.*
