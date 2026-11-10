@@ -92,3 +92,4 @@ Composite indices average several indicators, so a good score on one dimension c
 
 ---
 *Developed by Andrea Porro, Ilaria Anna Cesaratto, Chiara Mezzanzanica and Nicolo Nucci.*
+
